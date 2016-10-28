@@ -1,0 +1,16 @@
+/*
+========================
+Main Styles
+========================
+*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: blue;
+}
+
+.ans-options {
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: none;
+    /*-webkit-appearance: none;*/
+}
