@@ -4,8 +4,9 @@ Main Styles
 ========================
 */
 body {
-    font-family: 'Montserrat', sans-serif;
-    color: blue;
+    font-family: 'Average Sans', sans-serif;
+    color: #BACDB0;
+    background-color: #4F3575;
 }
 
 .ans-options {
@@ -13,4 +14,27 @@ body {
     font-size: 16px;
     border-radius: none;
     /*-webkit-appearance: none;*/
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    margin-top: 15px;
+}
+span {
+    font-size: 36px;
+}
+.btn, .btn-lg {
+    background-color: #212D40;
+    color: #BACDB0;
+}
+.btn:hover, .btn-lg:hover {
+    background-color: #495975;
+    color: #BACDB0;
+}
+.modal-content {
+    color: #4F3575;
+}
+#chosenFriendPic {
+    width: 300px;
 }

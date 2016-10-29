@@ -30,8 +30,13 @@ module.exports = function(app) {
             return Math.min(p,c);
         });
     }
+
+    function modal() {
+        //''
+    }
+
     app.get('/api/friends', function(req,res){
-        res.send(JSON.stringify(friends));
+        res.json(friends);
     });
     app.post('/api/friends', function(req,res){
         console.log('post working');
@@ -39,39 +44,7 @@ module.exports = function(app) {
         var newFriend = req.body;
         console.log('newFriend scores: ' + newFriend.scores);
         var matchedFriend = friends[compareResults(newFriend, friends)];
-        // TODO need to figure how to send response with new friend to modal
         friends.push(newFriend);
         res.send(matchedFriend);
     });
 }
-
-/*
-// It works!
-
-21:50:10 $: node server.js
-Server listening on port ****
-post working
-[ { name: 'yogi bear', scores: [ 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 ] },
-  { name: 'boo boo', scores: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ] } ]
-newFriend scores: 2,2,2,2,2,2,2,2,2,2
-diffs 30,10
-minDiff: 10
-
-
-// response from Postman: 
-{
-  "name": "boo boo",
-  "scores": [
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1,
-    1
-  ]
-}
-*/

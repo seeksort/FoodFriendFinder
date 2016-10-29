@@ -10,179 +10,303 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Average+Sans|Raleway:800" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container">
+        <!-- Title -->
         <div class="row">
-            <div class="col-sm-12">
-                <h2>Survey Questions</h2>
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8">
+                <h1>Survey Questions</h1>
                 <h3>About You</h3>
+                <!-- Friend Name & Pic -->
+                <form>
+                  <div class="form-group">
+                    <label for="inputName">Name (Required)</label>
+                    <input type="name" class="form-control" id="inputName" placeholder="Your Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputImage">Link to Photo Image (Required)</label>
+                    <input type="name" class="form-control" id="inputImage" placeholder="Link">
+                  </div>
+                </form>
             </div>
         </div>
+        
+        <!-- Q1 -->
         <div class="row">
-            <div class="col-sm-12"> 
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
                 <h3>Question 1</h3>
                 <p>After a long day of work, you like to kick back at home.</p>
-                <div class="select-ans-option">
-                    <span id="ans-1">Select an Option</span>
-                </div>
-                <div class="ans-dropdown">    
-                    <select class="ans-options">
-                        <option>1 (strongly agree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly disagree)</option>
+                <div class="col-md-4">
+                    <select class="form-control selected-ans" id="ans-1">
+                      <option value="1">1 (strongly agree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly disagree)</option>
                     </select>
+                    <br>
                 </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
 
+        <!-- Q2 -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
                 <h3>Question 2</h3>
                 <p>After a long day of work, you like to kick back at home.</p>
-                <div class="select-ans-option">
-                    <span id="ans-2"></span>
-                </div>
-                <div class="ans-dropdown">    
-                    <select class="ans-options">
-                        <option>1 (strongly agree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly disagree)</option>
+                <div class="col-md-4">
+                    <select class="form-control selected-ans" id="ans-2">
+                      <option value="1">1 (strongly agree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly disagree)</option>
                     </select>
+                    <br>
                 </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
 
+        <!-- Q3 -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
                 <h3>Question 3</h3>
                 <p>After a long day of work, you like to kick back at home.</p>
-                <div class="select-ans-option">
-                    <span id="ans-3"></span>
-                </div>
-                <div class="ans-dropdown">    
-                    <select class="ans-options">
-                        <option>1 (strongly agree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly disagree)</option>
+                <div class="col-md-4">
+                    <select class="form-control selected-ans" id="ans-3">
+                      <option value="1">1 (strongly agree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly disagree)</option>
                     </select>
+                    <br>
                 </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
 
+        <!-- Q4 -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
                 <h3>Question 4</h3>
                 <p>After a long day of work, you like to kick back at home.</p>
-                <div class="select-ans-option">
-                    <span id="ans-4"></span>
-                </div>
-                <div class="ans-dropdown">    
-                    <select class="ans-options">
-                        <option>1 (strongly agree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly disagree)</option>
+                <div class="col-md-4">
+                    <select class="form-control selected-ans" id="ans-4">
+                      <option value="1">1 (strongly agree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly disagree)</option>
                     </select>
+                    <br>
                 </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
 
+        <!-- Q5 -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
                 <h3>Question 5</h3>
                 <p>After a long day of work, you like to kick back at home.</p>
-                <div class="select-ans-option">
-                    <span id="ans-5"></span>
-                </div>
-                <div class="ans-dropdown">    
-                    <select class="ans-options">
-                        <option>1 (strongly agree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly disagree)</option>
+                <div class="col-md-4">
+                    <select class="form-control selected-ans" id="ans-5">
+                      <option value="1">1 (strongly agree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly disagree)</option>
                     </select>
+                    <br>
                 </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
 
+        <!-- Q6 -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
                 <h3>Question 6</h3>
                 <p>After a long day of work, you like to kick back at home.</p>
-                <div class="select-ans-option">
-                    <span id="ans-6"></span>
-                </div>
-                <div class="ans-dropdown">    
-                    <select class="ans-options">
-                        <option>1 (strongly agree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly disagree)</option>
+                <div class="col-md-4">
+                    <select class="form-control selected-ans" id="ans-6">
+                      <option value="1">1 (strongly agree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly disagree)</option>
                     </select>
+                    <br>
                 </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
 
+        <!-- Q7 -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
                 <h3>Question 7</h3>
                 <p>After a long day of work, you like to kick back at home.</p>
-                <div class="select-ans-option">
-                    <span id="ans-7"></span>
-                </div>
-                <div class="ans-dropdown">    
-                    <select class="ans-options">
-                        <option>1 (strongly agree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly disagree)</option>
+                <div class="col-md-4">
+                    <select class="form-control selected-ans" id="ans-7">
+                      <option value="1">1 (strongly agree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly disagree)</option>
                     </select>
+                    <br>
                 </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
 
+        <!-- Q8 -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
                 <h3>Question 8</h3>
                 <p>After a long day of work, you like to kick back at home.</p>
-                <div class="select-ans-option">
-                    <span id="ans-8"></span>
-                </div>
-                <div class="ans-dropdown">    
-                    <select class="ans-options">
-                        <option>1 (strongly agree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly disagree)</option>
+                <div class="col-md-4">
+                    <select class="form-control selected-ans" id="ans-8">
+                      <option value="1">1 (strongly agree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly disagree)</option>
                     </select>
+                    <br>
                 </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
 
+        <!-- Q9 -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
                 <h3>Question 9</h3>
                 <p>After a long day of work, you like to kick back at home.</p>
-                <div class="select-ans-option">
-                    <span id="ans-9"></span>
-                </div>
-                <div class="ans-dropdown">    
-                    <select class="ans-options">
-                        <option>1 (strongly agree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly disagree)</option>
+                <div class="col-md-4">
+                    <select class="form-control selected-ans" id="ans-9">
+                      <option value="1">1 (strongly agree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly disagree)</option>
                     </select>
+                    <br>
                 </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
 
+        <!-- Q10 -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
                 <h3>Question 10</h3>
                 <p>After a long day of work, you like to kick back at home.</p>
-                <div class="select-ans-option">
-                    <span id="ans-10"></span>
-                </div>
-                <div class="ans-dropdown">    
-                    <select class="ans-options">
-                        <option>1 (strongly agree)</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5 (strongly disagree)</option>
+                <div class="col-md-4">
+                    <select class="form-control selected-ans" id="ans-10">
+                      <option value="1">1 (strongly agree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (strongly disagree)</option>
                     </select>
+                    <br>
                 </div>
+                <div class="col-md-8"></div>
+            </div>
+        </div>
 
-                <button>Submit Your Answers</button>
-                <br>
+        <!-- Button trigger modal -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
+                <button type="submit" class="btn btn-lg"  data-target="#myModal" id="Submit">
+                  Submit
+                </button>
+            </div>
+        </div>
+
+        <!-- links to JSON, Github -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8"> 
+                <a href="/api/friends">API Friends List</a> | <a href="https://github.com/seeksort/FriendFinder">GitHub Repo</a>
+                    <br>
             </div>
         </div>
     </div>
 
-    <!-- optionnks to JSON, Github -->
-    <a href="#">API Friends optionst</a> | <a href="#">GitHub Repo</a>
-    <!-- Javascript -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Tonight you dine with...</h4>
+          </div>
+          <div class="modal-body">
+            <h3 id="chosenFriendName"></h3>
+            <img src="" id="chosenFriendPic">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script type="text/javascript">
+
+        $("#Submit").on("click", function(){
+            var newScores = [];
+            for (var i = 1; i<=10; i++) {
+                newScores.push($("#ans-" + i + " option:selected").val());
+            }
+            console.log(newScores);
+            var newFriend = {
+                name: $("#inputName").val().trim(),
+                photo: $("#inputImage").val().trim(),
+                scores: newScores
+            };
+
+            $.ajax({
+                type: "POST",
+                url: window.location.origin + "/api/friends",
+                data: newFriend
+            }).done(function(resp){
+                $("#chosenFriendName").html(resp.name);
+                $("#chosenFriendPic").attr("src", resp.photo);
+                $("#myModal").modal('toggle');
+            });
+        });
+      
+    </script>
 </body>
 </html>
