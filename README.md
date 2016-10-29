@@ -4,4 +4,6 @@
 
 The tricky bits: routing and figuring out relative paths (for the static CSS file). But it was nice to spend some time with jQuery again.
 
-[Heroku link](#)
+<img src="screenshot.png" alt="Home page describing how the timestamp microservice works" width="500">
+
+[Heroku link](https://floating-shore-27486.herokuapp.com/)
