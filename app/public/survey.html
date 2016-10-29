@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Friend Finder</title>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Average+Sans|Raleway:800" rel="stylesheet">
@@ -15,7 +14,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid">
+        <!-- Main Pic -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8">
+                <img src="surveypic.jpg" class="img img-responsive" alt="A row of tables occupied by various people chatting over beer.">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
         <!-- Title -->
         <div class="row">
             <div class="col-md-2"></div>
@@ -26,14 +33,15 @@
                 <form>
                   <div class="form-group">
                     <label for="inputName">Name (Required)</label>
-                    <input type="name" class="form-control" id="inputName" placeholder="Your Name">
+                    <input type="text" class="form-control" id="inputName" placeholder="Your Name">
                   </div>
                   <div class="form-group">
                     <label for="inputImage">Link to Photo Image (Required)</label>
-                    <input type="name" class="form-control" id="inputImage" placeholder="Link">
+                    <input type="text" class="form-control" id="inputImage" placeholder="Link">
                   </div>
                 </form>
             </div>
+            <div class="col-md-1"></div>
         </div>
         
         <!-- Q1 -->
@@ -41,7 +49,7 @@
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8"> 
                 <h3>Question 1</h3>
-                <p>After a long day of work, you like to kick back at home.</p>
+                <p>I don't like to wait long for a meal.</p>
                 <div class="col-md-4">
                     <select class="form-control selected-ans" id="ans-1">
                       <option value="1">1 (strongly agree)</option>
@@ -61,7 +69,7 @@
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8"> 
                 <h3>Question 2</h3>
-                <p>After a long day of work, you like to kick back at home.</p>
+                <p>I have strong opinions about certain types of food.</p>
                 <div class="col-md-4">
                     <select class="form-control selected-ans" id="ans-2">
                       <option value="1">1 (strongly agree)</option>
@@ -81,7 +89,7 @@
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8"> 
                 <h3>Question 3</h3>
-                <p>After a long day of work, you like to kick back at home.</p>
+                <p>Comfort food is my absolute favorite thing.</p>
                 <div class="col-md-4">
                     <select class="form-control selected-ans" id="ans-3">
                       <option value="1">1 (strongly agree)</option>
@@ -101,7 +109,7 @@
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8"> 
                 <h3>Question 4</h3>
-                <p>After a long day of work, you like to kick back at home.</p>
+                <p>Fried food is the best.</p>
                 <div class="col-md-4">
                     <select class="form-control selected-ans" id="ans-4">
                       <option value="1">1 (strongly agree)</option>
@@ -121,7 +129,7 @@
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8"> 
                 <h3>Question 5</h3>
-                <p>After a long day of work, you like to kick back at home.</p>
+                <p>I love spicy food.</p>
                 <div class="col-md-4">
                     <select class="form-control selected-ans" id="ans-5">
                       <option value="1">1 (strongly agree)</option>
@@ -141,7 +149,7 @@
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8"> 
                 <h3>Question 6</h3>
-                <p>After a long day of work, you like to kick back at home.</p>
+                <p>Dessert is my favorite food group.</p>
                 <div class="col-md-4">
                     <select class="form-control selected-ans" id="ans-6">
                       <option value="1">1 (strongly agree)</option>
@@ -161,7 +169,7 @@
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8"> 
                 <h3>Question 7</h3>
-                <p>After a long day of work, you like to kick back at home.</p>
+                <p>I love European cuisine (e.g. French, German, Italian, Spanish)</p>
                 <div class="col-md-4">
                     <select class="form-control selected-ans" id="ans-7">
                       <option value="1">1 (strongly agree)</option>
@@ -181,7 +189,7 @@
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8"> 
                 <h3>Question 8</h3>
-                <p>After a long day of work, you like to kick back at home.</p>
+                <p>I love Asian cuisine (e.g. Korean, Japanese, Thai, Vietnamese, Chinese)</p>
                 <div class="col-md-4">
                     <select class="form-control selected-ans" id="ans-8">
                       <option value="1">1 (strongly agree)</option>
@@ -201,7 +209,7 @@
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8"> 
                 <h3>Question 9</h3>
-                <p>After a long day of work, you like to kick back at home.</p>
+                <p>I love seafood.</p>
                 <div class="col-md-4">
                     <select class="form-control selected-ans" id="ans-9">
                       <option value="1">1 (strongly agree)</option>
@@ -221,7 +229,7 @@
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8"> 
                 <h3>Question 10</h3>
-                <p>After a long day of work, you like to kick back at home.</p>
+                <p>I can taste when a dish has umami.</p>
                 <div class="col-md-4">
                     <select class="form-control selected-ans" id="ans-10">
                       <option value="1">1 (strongly agree)</option>
@@ -263,11 +271,11 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Tonight you dine with...</h4>
+            <h4 class="modal-title" id="myModalLabel">You'll have a great time at dinner with...</h4>
           </div>
           <div class="modal-body">
             <h3 id="chosenFriendName"></h3>
-            <img src="" id="chosenFriendPic">
+            <img src="" id="chosenFriendPic" alt="The picture of the chosen food friend.">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -285,26 +293,31 @@
     <script type="text/javascript">
 
         $("#Submit").on("click", function(){
-            var newScores = [];
-            for (var i = 1; i<=10; i++) {
-                newScores.push($("#ans-" + i + " option:selected").val());
+            if (($("#inputName").val() === '') || ($("#inputImage").val() === '')) {
+                alert('Please fill out required fields.');
             }
-            console.log(newScores);
-            var newFriend = {
-                name: $("#inputName").val().trim(),
-                photo: $("#inputImage").val().trim(),
-                scores: newScores
-            };
+            else {
+                var newScores = [];
+                for (var i = 1; i<=10; i++) {
+                    newScores.push($("#ans-" + i + " option:selected").val());
+                }
+                console.log(newScores);
+                var newFriend = {
+                    name: $("#inputName").val().trim(),
+                    photo: $("#inputImage").val().trim(),
+                    scores: newScores
+                };
 
-            $.ajax({
-                type: "POST",
-                url: window.location.origin + "/api/friends",
-                data: newFriend
-            }).done(function(resp){
-                $("#chosenFriendName").html(resp.name);
-                $("#chosenFriendPic").attr("src", resp.photo);
-                $("#myModal").modal('toggle');
-            });
+                $.ajax({
+                    type: "POST",
+                    url: window.location.origin + "/api/friends",
+                    data: newFriend
+                }).done(function(resp){
+                    $("#chosenFriendName").html(resp.name);
+                    $("#chosenFriendPic").attr("src", resp.photo);
+                    $("#myModal").modal('toggle');
+                });
+            }
         });
       
     </script>

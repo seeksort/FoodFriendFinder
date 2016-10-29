@@ -1,19 +1,7 @@
-/*
-========================
-Main Styles
-========================
-*/
 body {
     font-family: 'Average Sans', sans-serif;
     color: #BACDB0;
     background-color: #4F3575;
-}
-
-.ans-options {
-    font-family: sans-serif;
-    font-size: 16px;
-    border-radius: none;
-    /*-webkit-appearance: none;*/
 }
 
 h1 {
@@ -24,17 +12,34 @@ h1 {
 span {
     font-size: 36px;
 }
+
+a {
+    color: #98D2EB;
+}
+a:hover {
+    color: #E1F2FE;
+}
+
+.ans-options {
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: none;
+}
+
 .btn, .btn-lg {
     background-color: #212D40;
     color: #BACDB0;
 }
+
 .btn:hover, .btn-lg:hover {
     background-color: #495975;
     color: #BACDB0;
 }
+
 .modal-content {
     color: #4F3575;
 }
+
 #chosenFriendPic {
     width: 300px;
 }

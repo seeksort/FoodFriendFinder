@@ -19,8 +19,6 @@ module.exports = function(app) {
         });
         var minDiff = arrMin(diffs);
         // returns the array index of friend w/ smallest score differential
-        console.log('diffs ' + diffs);
-        console.log('minDiff: ' + minDiff)
         return diffs.indexOf(minDiff);
     }
 
@@ -31,20 +29,13 @@ module.exports = function(app) {
         });
     }
 
-    function modal() {
-        //''
-    }
-
     app.get('/api/friends', function(req,res){
         res.json(friends);
     });
     app.post('/api/friends', function(req,res){
-        console.log('post working');
-        console.log(friends);
         var newFriend = req.body;
-        console.log('newFriend scores: ' + newFriend.scores);
         var matchedFriend = friends[compareResults(newFriend, friends)];
         friends.push(newFriend);
         res.send(matchedFriend);
     });
-}
+};

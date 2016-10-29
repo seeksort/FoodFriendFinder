@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
     <title>Friend Finder</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -15,31 +14,36 @@
 </head>
 <body>
     <div class="container-fluid">
+        <!-- Main Pic -->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-8">
+                <img src="mainpic.jpg" class="img img-responsive" alt="A table filled with pasta, bread, and beer. A woman's arm dips bread into olive oil.">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <!-- Title & Text -->
         <div class="row">
             <div class="col-md-2"></div>
             <div class="col-xs-12 col-md-8">
                 <div class="row">
-                    <div class="col-xs-4 col-md-4">
+                    <div class="col-xs-12 col-md-4">
                         <h1><span class="glyphicon glyphicon-cutlery"></span> Food</h1>
                         <h1><span class="glyphicon glyphicon-glass"></span> Friend</h1>
                         <h1><span class="glyphicon glyphicon-ice-lolly-tasted"></span> Finder</h1>
                     </div>
-                    <div class="col-xs-8 col-md-8">
-                        <br>
+                    <div class="col-xs-12 col-md-8">
                         <h3>Going out to eat?</h3>
                         <h3>Find a dining companion with similar (un)discerning taste.</h3> 
                         <a href="/survey">
-                            <button class="btn">Go to Survey</button                        
+                            <button class="btn">Go to Survey</button>                       
                         </a>
+                        <br><br>
+
+                        <!-- Links to JSON, Github -->
+                        <a href="/api/friends">API Friends List</a> | <a href="https://github.com/seeksort/FriendFinder">GitHub Repo</a>         
                     </div>
                 </div>
-                <div class="row">
-                    <br>
-                <!-- Links to JSON, Github -->
-                </div>
-                <footer>
-                    <a href="/api/friends">API Friends List</a> | <a href="https://github.com/seeksort/FriendFinder">GitHub Repo</a>
-                </footer>
             </div>
             <div class="col-md-2"></div>
         </div>
@@ -49,7 +53,5 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- Javascript -->
 </body>
 </html>
