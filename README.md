@@ -1,4 +1,4 @@
-# FriendFinder
+# FoodFriendFinder
 
 (Node.js, Express.js, Bootstrap) A website for matching dining companions. Uses server-side routing to serve HTML and JSON (for an API), and to determine and return the best friend match.
 
